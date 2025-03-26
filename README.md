@@ -23,5 +23,29 @@ MongoChat is a **full-stack chatbot application** that allows users to query a *
 
 ---
 
-## 📂 Project Structure
-mongochat/ ├── mongochat-backend/ │ ├── src/main/kotlin/com/yashi/mongochat/ │ │ ├── controller/ # API Controllers │ │ ├── model/ # Data Models (Person) │ │ ├── repository/ # MongoDB Repository │ │ ├── service/ # Business Logic │ │ ├── config/ # CORS Configuration │ └── build.gradle.kts └── mongochat-frontend/ ├── src/ │ ├── components/ # React Components (Chatbot) │ └── App.js # Main Entry ├── package.json ├── public/ └── README.md
+## 🏃‍♂️ How to Run
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/yourusername/mongochat.git
+cd mongochat
+
+### 2️⃣ Set Up MongoDB
+```bash
+mongod --dbpath=/your/local/dbpath
+
+### 3️⃣ Run the Backend (Spring Boot - Kotlin)
+```bash
+cd mongochat-backend
+./gradlew bootRun
+
+### The backend runs on http://localhost:8080
+
+### 4️⃣ Run the Frontend (React)
+```bash
+cd ../mongochat-frontend
+npm install
+npm start
+
+### The frontend runs on http://localhost:3000
+
